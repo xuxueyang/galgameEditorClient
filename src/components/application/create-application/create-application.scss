@@ -1,0 +1,31 @@
+.create-application-container {
+  position: relative;
+  height: 150px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+  transition: box-shadow .15s ease-out 0s, -webkit-box-shadow .15s ease-out 0s;
+  margin: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  i {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    width: 45px;
+    margin: auto;
+    font-size: 45px;
+    color: #e7e7ec;
+  }
+  .add-text {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    color: #cacad3;
+    position: absolute;
+    top: 96px;
+  }
+  &:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+  }
+}

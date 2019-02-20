@@ -1,0 +1,54 @@
+.quick-add-node-container {
+  box-sizing: border-box;
+  font-size: 13px;
+  position: relative;
+  width: 260px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
+  z-index: 1000;
+  margin: 0 auto;
+  text-align: left;
+  .header {
+    height: 10px;
+  }
+  .node-name-wrapper {
+    height: 84px;
+    padding: 10px;
+    color: #2b3441;
+    .hint {
+      margin-bottom: 10px;
+    }
+  }
+  .select-user-wrapper {
+    position: relative;
+    padding: 10px 10px 0 10px;
+    border-top: 1px solid #eaeaee;
+    border-bottom: 1px solid #eaeaee;
+    .title {
+      color: #2b3441;
+    }
+    .audit-user-wrapper {
+      position: relative;
+      padding-top: 10px;
+    }
+  }
+  .footer {
+    padding: 15px 10px;
+    color: #6b737b;
+  }
+}
+
+.node_bg_review {
+  background: linear-gradient(90deg, #f69b31, #f7d44d 99%);
+}
+.node_bg_write {
+  background: linear-gradient(90deg, #324963 3%, #828fa5 93%);
+}
+.node_bg_copy {
+  background: linear-gradient(120deg, #afafb8 1%, #dfdfe8);
+}
+.node_bg_robot {
+  background: linear-gradient(77deg, #881c6d 3%, #f9699f);
+}

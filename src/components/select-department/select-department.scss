@@ -1,0 +1,190 @@
+.department-area {
+  width: auto !important;
+  .department-item {
+    position: relative;
+    float: left;
+    width: 27px;
+    height: 27px;
+    margin-left: 6px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border: 2px solid #f5f5f7;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: cover;
+    background-image: url("./assets/images/default-user.png");
+    .delete-department {
+      position: absolute;
+      text-align: center;
+      top: -5px;
+      right: -5px;
+      display: none;
+      width: 13px;
+      height: 13px;
+      line-height: 13px;
+      border-radius: 50%;
+      background-color: #ff3232;
+      i {
+        color: #fff;
+        font-size: 13px;
+        transform: scale(.8);
+      }
+    }
+    &:hover {
+      .delete-department {
+        display: block;
+      }
+    }
+    &.add-btn {
+      width: 31px;
+      height: 31px;
+      line-height: 31px;
+      text-align: center;
+      color: #f5bc21;
+      background: #fff;
+      border: none;
+    }
+    &.current-department {
+      width: 31px;
+      height: 31px;
+      line-height: 31px;
+      border: none;
+      text-align: center;
+      background-image: linear-gradient(-90deg, #61bfad, #077267 95%);
+      & .delete-department {
+        top: -3px;
+        right: -3px;
+      }
+      & > i {
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.select-department-popover {
+  box-sizing: border-box;
+  padding: 0 !important;
+  /deep/ .el-tree-node__content {
+    height: 50px;
+    line-height: 50px;
+  }
+  .select-user-container {
+    background-color: #fff;
+    .search-row {
+      padding: 8px 10px;
+      background-color: #fafafb;
+      box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, .1);
+    }
+    .department-list-container {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      height: 300px;
+      overflow: auto;
+      .group-wrapper {
+        /deep/ .el-checkbox {
+          display: block;
+          padding: 12px 10px 12px 19px;
+          height: 50px;
+          box-sizing: border-box;
+          &:hover {
+            background-color: #f5f7fa;
+          }
+        }
+        /deep/ .el-checkbox__input {
+          top: 6px;
+          float: right;
+        }
+        /deep/ .el-checkbox__input.is-checked + .el-checkbox__label {
+          color: inherit;
+        }
+        /deep/ .el-checkbox + .el-checkbox {
+          margin-left: 0;
+        }
+        .checkbox-department-wrapper {
+          position: relative;
+          .department-item {
+            position: relative;
+            margin-right: 5px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+            cursor: pointer;
+            border: 2px solid #f5f5f7;
+            border-radius: 50%;
+            background-position: 50%;
+            background-size: cover;
+            background-image: url("./assets/images/default-user.png");
+          }
+          .department-name {
+            width: 180px;
+            margin-left: 8px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top: -8px;
+          }
+        }
+      }
+      .department-row {
+        cursor: pointer;
+        margin: 0;
+        &.current-department {
+          height: 50px;
+          padding: 12px 10px 12px 19px;
+          box-sizing: border-box;
+        }
+        &:hover {
+          background-color: #f5f7fa;
+        }
+        &.current-department /deep/ .el-checkbox {
+          display: block;
+        }
+        &.current-department /deep/ .el-checkbox__input {
+          top: 6px;
+          float: right;
+        }
+        &.current-department /deep/ .el-checkbox__input.is-checked + .el-checkbox__label {
+          color: inherit;
+        }
+        .department-info-area {
+          position: relative;
+          .avatar {
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 5px;
+            background: linear-gradient(-90deg, #61bfad, #077267 95%);
+            display: inline-block;
+            i {
+              color: #fff;
+            }
+          }
+          .department-name {
+            width: 180px;
+            margin-left: 8px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .department-checkbox {
+            float: right;
+            position: relative;
+            top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

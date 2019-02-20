@@ -1,0 +1,48 @@
+.table-config-container {
+  box-sizing: border-box;
+  font-size: 13px;
+  /deep/ .el-dropdown{
+    width: 100%;
+  }
+  .config-container {
+    .config-row {
+      height: 34px;
+      line-height: 34px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 1px solid #dedee5;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      outline: none;
+      i {
+        color: #b0b0b9;
+        font-size: 14px;
+      }
+      .row-left {
+        float: left;
+      }
+      .row-right {
+        float: right;
+        i {
+          cursor: pointer;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .add-container{
+    height: 34px;
+    line-height: 34px;
+    width: 100%;
+    background-color: #fafafd;
+    border: 1px dashed #d5d5f4;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    i{
+      color: #f5f5f7;
+      margin-right: 5px;
+      font-size: 16px;
+    }
+  }
+}

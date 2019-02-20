@@ -1,0 +1,53 @@
+.qrobot-relation-container {
+  padding: 20px;
+  background-color: #fff;
+  .config-title {
+    margin: 20px 0 10px 0;
+    font-size: 13px;
+  }
+  .config-title-hint {
+    color: #b4b4bc;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    font-size: 12px;
+  }
+  .rule-row {
+    margin: 10px 0;
+    .delete-container {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      border-radius: 3px;
+      background-color: #f5f5f7;
+      color: #c1c1cd;
+      cursor: pointer;
+      transition: all .3s;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  .add-rule-container {
+    width: 270px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px dashed #cacad3;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all .2s;
+    text-align: center;
+    i {
+      color: #ebebf0;
+      padding-right: 5px;
+      font-size: 15px;
+    }
+    &:hover {
+      border: 1px dashed #f5bc21;
+      i{
+        color: #f5bc21;
+      }
+    }
+  }
+}

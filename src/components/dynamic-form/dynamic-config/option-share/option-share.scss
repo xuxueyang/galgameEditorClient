@@ -1,0 +1,23 @@
+.option-share-wrapper {
+  .option-share-title {
+    color: #f5bc21;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 13px;
+  }
+  .option-share-header {
+    height: 29px;
+    line-height: 29px;
+    padding: 0 15px;
+    background-color: #fafafb;
+    color: #b0b0b9;
+    border-bottom: 1px solid #ebebf0;
+  }
+
+  & /deep/ .el-dialog__body {
+    padding: 0;
+  }
+  & /deep/ .el-dialog__footer {
+    border-top: 1px solid #ebebf0;
+  }
+}
